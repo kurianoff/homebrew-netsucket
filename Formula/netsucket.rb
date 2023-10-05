@@ -1,5 +1,5 @@
 class Netsucket < Formula
-  desc "A dynamic port monitoring tool that listens for connections and proxies traffic between a client and the tunnel."
+  desc "Port monitoring tool that proxies traffic between a client and the tunnel"
   homepage "https://github.com/kurianoff/netsucket"
   version "0.0.5"
   license "MIT"
@@ -20,4 +20,3 @@ class Netsucket < Formula
     assert_match "netsucket version v#{version}", shell_output("#{bin}/netsucket --version")
   end
 end
-
