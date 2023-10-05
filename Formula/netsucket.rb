@@ -1,15 +1,15 @@
 class Netsucket < Formula
   desc "A dynamic port monitoring tool that listens for connections and proxies traffic between a client and the tunnel."
   homepage "https://github.com/kurianoff/netsucket"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   if Hardware::CPU.arm?
     url "https://github.com/kurianoff/netsucket/releases/download/v#{version}/netsucket-darwin-arm64"
-    sha256 "34b408be8557907ca6857788da9fa3530dcc0e02c04ea6b127729d1881def150"
+    sha256 "b5dda0a1d702e38efb515b469f47cc6dddd5be9b56631720b5cb29fa4b7d44e5"
   else
     url "https://github.com/kurianoff/netsucket/releases/download/v#{version}/netsucket-darwin-amd64"
-    sha256 "f27202a7449a153b463f9de698153b2b7c1a2d3bc8b6aaeae0274a131cf5236f"
+    sha256 "b6ca8f983a301c0c0b268dc3ea02ad46d5caa2a1e05ef525786022047a7606d9"
   end
 
   def install
